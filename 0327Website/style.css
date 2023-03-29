@@ -1,0 +1,411 @@
+/* Set default styles for HTML and BODY elements */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Lucida sans-serif, sans-serif;
+  font-size: 16px;
+}
+
+/* Set background color and default text color */
+body {
+  background-color: #f2f2f2;
+  color: #dddddd;
+}
+
+/* Set styles for the #background element */
+#background {
+  background: linear-gradient(155.59deg, #101010 34.9%, rgba(16,16,16,0.85) 110.17%);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2000px;
+  z-index: -1;
+}
+
+#title {
+  font-size: 80px;
+  font-weight: 700;
+  color: #c6c6c6;
+  position: absolute;
+  top: calc(30%);
+  left: 76%;
+  transform: translateX(-50%);
+  text-align: right;
+  font-family: Lucida sans-serif, sans-serif;
+}
+
+#subtitle1 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #929292;
+  position: absolute;
+  top: calc(30%);
+  left: 75%;
+  transform: translateX(-50%);
+  text-align: right;
+}
+
+#subtitle2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #929292;
+  position: absolute;
+  top: 27vw;
+  left: 80%;
+  transform: translate(-63%);
+  text-align: right;
+}
+
+#title, #subtitle1, #subtitle2, #nsub1, #ndesc1, #ndesc2, #nutritionpic, #title2 {
+  opacity: 0;
+  animation: fade-in 1.15s ease-in-out forwards;
+}
+
+#mpdesc1, #mpdesc2, #mealplanpic, #mpsub1{
+  opacity: 0;
+  animation: fade-in 1.5s ease-in-out forwards;
+  animation-delay: 0.5s; /* add a delay of 1 second */
+}
+
+#chicken, #exrecipe, #quickrecipe, #Ingredients {
+  opacity: 0;
+  animation: fade-in 2s ease-in-out forwards;
+  animation-delay: 1s; /* add a delay of 1 second */
+}
+
+#last, #description, #img1, #img2, #img3, #button1, #button2, #button3, #sub1, #sub2, #sub3 {
+  opacity: 0;
+  animation: fade-in 2s ease-in-out forwards;
+  animation-delay: 3s; /* add a delay */
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#description {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  position: absolute;
+  top: calc(50% + 550px);
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+#last {
+  font-size: 16px;
+  font-weight: 600;
+  color: #929292;
+  position: absolute;
+  top: 95vw;
+  left: 46%;
+  transform: translateX(-42%);
+  text-align: center;
+}
+
+#button1 {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 80vh;
+  position:absolute;
+  left: 45.75vw;
+  display: inline-block;
+}
+
+#button2 {
+  background-color: #333;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 80vh;
+  position:absolute;
+  left: 19.5vw;
+  display: inline-block;
+}
+
+#button3 {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 80vh;
+  position:absolute;
+  left: 72.5vw;
+  display: inline-block;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+#img1 {
+  position: absolute;
+  top: 70vw;
+  left: 18vw;
+}
+
+#img2 {
+  position: absolute;
+  top: 70vw;
+  left: 44vw;
+
+}
+
+#img3 {
+  position: absolute;
+  top: 70vw;
+  left: 71vw;
+}
+
+#mainimg img {
+
+  top: 0%;
+  width: 55%;
+  height: 750px;
+
+}
+
+#sub1 {
+  position: absolute;
+  top: 83vw;
+  left: 21.75vw;
+  font-family: Lucida sans-serif, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #929292;
+}
+
+#sub2 {
+  position: absolute;
+  top: 83vw;
+  left: 46vw;
+  font-family: Lucida sans-serif, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #929292;
+}
+
+#sub3 {
+  position: absolute;
+  top: 83vw;
+  left: 75vw;
+  font-family: Lucida sans-serif, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #929292;
+}
+
+nav {
+  background-color: #181818; /* set background color */
+  overflow: hidden;
+  display: flex; /* use flexbox for spacing */
+  justify-content: space-evenly; /* evenly spaced links */
+  list-style-type: none; /* remove bullet points */
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  display: inline-block; /* display list items horizontally */
+}
+nav a {
+  display: block;
+  color: white; /* set font color */
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+
+/* THE START OF RECIPE PART */
+
+#Ingredients {
+  font-size: 18px;
+  font-weight: 700;
+  color: #929292;
+  position: absolute;
+  top: calc(95%);
+  left: 20%;
+  transform: translateX(-50%);
+  text-align: left;
+}
+
+#title2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  position: absolute;
+  top: calc(20%);
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+#chicken img{
+
+  position: absolute;
+  top: 25vw;
+  left: 12vw;
+  height: 250px;
+  width: 250px;
+}
+
+#api {
+  margin-top: 1050px;
+  margin-left: 210px;
+}
+
+#exrecipe {
+  font-size: 18px;
+  font-weight: 700;
+  color: #929292;
+  position: absolute;
+  top: calc(65%);
+  left: 70%;
+  transform: translateX(-40%);
+  text-align: right;
+}
+
+#quickrecipe {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  position: absolute;
+  top: calc(45%);
+  left: 75%;
+  transform: translateX(-40%);
+  text-align: right;
+}
+
+#search2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  position: absolute;
+  top: 1000px;
+  left: 42.5%;
+  transform: translateX(-50%);
+  text-align: left;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* NOTES FOR TMRW DURING LAB-- CONTINUE DOING THE SAME THING, 
+MOVING THE EARLIER STUFF DOWN TO READJUST THE RECIPE HTML FILE. finish the recipe, 
+and nutrition or mealplanning htmls for tomorrow istfg*/
+
+#nsub1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  position: absolute;
+  top: calc(20%);
+  left: 70%;
+  transform: translateX(-50%);
+  text-align: left;
+}
+
+#ndesc1 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #8a8a8a;
+  position: absolute;
+  top: calc(38%);
+  left: 70%;
+  transform: translateX(-50%);
+  text-align: left;
+}
+
+#ndesc2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #8a8a8a;
+  position: absolute;
+  top: calc(86%);
+  left: 70%;
+  transform: translateX(-50%);
+  text-align: left;
+}
+
+#nutritionpic{
+  position: absolute;
+  top: 12vw;
+  left: 10vw;
+
+}
+
+#mpsub1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  position: absolute;
+  top: calc(20%);
+  left: 70%;
+  transform: translateX(-50%);
+  text-align: left;
+}
+
+#mpdesc1 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #8a8a8a;
+  position: absolute;
+  top: calc(38%);
+  left: 70%;
+  transform: translateX(-50%);
+  text-align: left;
+}
+
+#mpdesc2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #8a8a8a;
+  position: absolute;
+  top: calc(64%);
+  left: 70%;
+  transform: translateX(-50%);
+  text-align: left;
+}
+
+#mealplanpic img {
+
+  margin-top: 2%;
+  margin-left: 8%;
+  width: 55%;
+  height: 600px;
+  width: 550px;
+
+}
+
+/* #insta1 {
+
+  margin-top: 7%;
+  margin-left: 10%;
+
+} */
